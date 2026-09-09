@@ -82,6 +82,8 @@ button { font: inherit; }
 .polaroid-4 { transform: translateY(14px) rotate(5deg); }
 .polaroid:hover { transform: translateY(-8px) rotate(0deg); box-shadow: 0 24px 50px -18px oklch(0.25 0.03 48 / 60%); }
 .modal-photo { animation: photo-in 240ms ease-out; transform: rotate(-1deg); }
+.gallery-scroll { scrollbar-width: none; }
+.gallery-scroll::-webkit-scrollbar { display: none; }
 
 .reveal { opacity: 0; transform: translateY(26px); transition: opacity 700ms ease, transform 700ms ease; }
 .reveal.is-visible { opacity: 1; transform: translateY(0); }
@@ -91,9 +93,14 @@ button { font: inherit; }
 .animate-fade-in { animation: fade-in 900ms 150ms both ease-out; }
 
 @media (max-width: 639px) {
-  .bg-hero-wash { background: linear-gradient(0deg, oklch(0.95 0.026 81 / 94%) 0%, oklch(0.95 0.026 81 / 62%) 52%, transparent 78%); }
+  .bg-hero-wash { background: linear-gradient(0deg, oklch(0.95 0.026 81 / 96%) 0%, oklch(0.95 0.026 81 / 72%) 42%, transparent 72%); }
   .hero-copy { text-shadow: 0 1px 8px oklch(0.98 0.02 80 / 60%); }
-  .polaroid { padding: 0.35rem 0.35rem 0.5rem; }
+  .polaroid { padding: 0.55rem 0.55rem 0.8rem; }
+  .polaroid-1 { transform: rotate(-3deg); }
+  .polaroid-2 { transform: translateY(8px) rotate(2deg); }
+  .polaroid-3 { transform: rotate(-2deg); }
+  .polaroid-4 { transform: translateY(8px) rotate(3deg); }
+  .letter-paper { transform: rotate(-0.25deg); }
 }
 
 @media (prefers-reduced-motion: reduce) {
